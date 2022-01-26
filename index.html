@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MundevUX: Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a52963d39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="font-[Montserrat] bg-main">
+    <header class="absolute">
+        <div class="fixed h-16 w-screen top-0 bg-main border-b border-highlight ">
+            <div class="h-full md:flex md:justify-evenly md:items-center">
+                <div class="text-center">
+                    <h1 class="text-2xl font-semibold text-stroke ">Mundev<span class="text-highlight">.</span>UX</h1>
+                </div>
+                <nav id="navbar" class="text-center font-semibold">
+                    <span class="mx-5 text-stroke"><a href="#welcome-section">Inicio</a></span>
+                    <span class="mx-5 text-stroke"><a href="#projects">Proyectos</a></span>
+                    <span class="mx-5 text-stroke"><a href="#contact">Contacto</a></span>
+                </nav>
+                <div class="hidden md:contents">
+                    <button type="button" class="border border-highlight py-2 px-3 rounded-lg hover:bg-highlight text-highlight hover:text-main font-semibold">
+                        <a href="tel:+573508301065" class="">¡Hablemos!</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="welcome-section" class="h-screen pt-16 md:pt-14 flex justify-center items-center">
+            <div class="mx-5">
+                <h1 class="text-stroke text-7xl text-center font-semibold"><span class="text-highlight">¡</span>Hola<span class="text-highlight">!</span></h1>
+                <p class="text-stroke text-5xl text-center pt-9">Soy Camilo Cuitiva</p>
+                <div class="text-highlight text-xs font-semibold text-center pt-4">
+                    <span>Web Developer</span>
+                    <span class="text-stroke"> - </span>
+                    <span>UX/UI Designer</span>
+                    <span class="text-stroke"> - </span>
+                    <span>Web Designer</span>
+                </div>
+                <p class="text-stroke text-center pt-9">Me gusta <span class="text-highlight">aprender</span> y <span class="text-highlight">crear</span> cosas nuevas. Me encanta la <span class="text-highlight">tecnología</span> y la <span class="text-highlight">innovación</span>.</p>
+            </div>
+        </section>
+        <section id="projects" class="h-auto pt-20 md:pt-20 flex justify-center items-center">
+            <div class="max-h-max">
+                <h2 class="text-stroke text-5xl text-center mb-8">Mis proyectos</h2>
+                <div class="grid md:grid-cols-4 md:grid-flow-col gap-4 w-full items-center">
+                    <a href="https://mundevux.github.io/Pagina_Tributo/" target="_blank" rel="noopener noreferrer" class="mx-6 max-h-max border-2 border-highlight rounded-lg">
+                        <img src="./dist/img/Tribute Page_Gabriel García.png" alt="Página Tributo" class="rounded-t-md">
+                        <p class="bg-highlight text-center text-l text-main font-medium py-2 rounded-b-md">Pagina Tributo: Gabriel García</p>
+                    </a>
+                    <a href="https://mundevux.github.io/Formulario/" target="_blank" rel="noopener noreferrer" class="mx-6 max-h-max border-2 border-highlight rounded-lg">
+                        <img src="./dist/img/Formulario.png" alt="Formulario" class="rounded-t-md">
+                        <p class="bg-highlight text-center text-l text-main font-medium py-2 rounded-b-md">Formulario de Registro</p>
+                    </a>
+                    <a href="mundevux.github.io/landing_page/" target="_blank" rel="noopener noreferrer" class="mx-6 max-h-max border-2 border-highlight rounded-lg">
+                        <img src="./dist/img/Landing_Page.png" alt="Landing Page" class="rounded-t-md">
+                        <p class="bg-highlight text-center text-l text-main font-medium py-2 rounded-b-md">Landing Page</p>
+                    </a>
+                    <a href="mundevux.github.io/documentation_page/" target="_blank" rel="noopener noreferrer" class="mx-6 max-h-max border-2 border-highlight rounded-lg">
+                        <img src="./dist/img/Documentation_Page.png" alt="Documentation Page" class="rounded-t-md">
+                        <p class="bg-highlight text-center text-l text-main font-medium py-2 rounded-b-md">Documentación: JavaScript</p>
+                    </a>
+                </div>
+                <div class="w-full flex justify-center mt-14">
+                    <button class="bg-highlight py-2 px-3 rounded-lg hover:bg-stroke text-main hover:text-main font-semibold">Ver más</button>
+                </div>
+            </div> 
+        </section>
+        <section id="contact" class="h-screen pt-16 md:pt-14 flex justify-center items-center">
+            <div class="mx-5">
+                <h2 class="text-stroke text-5xl text-center mb-4">Contacto</h2>
+                <p class="text-stroke text-center pt-8 pb-5">Si tienes alguna duda o consulta, no dudes en contactarme.</p>
+                <form action="mailto:camiloandres174@gmail.com" class="bg-highlight p-10 rounded-lg">
+                    <div class="grid md:grid-cols-2 md:gap-4">
+                        <div class="pb-3">
+                            <label for="name" class="text-stroke text-l font-medium">Nombres</label>
+                            <input type="text" name="name" id="name" placeholder="Nombres" class="border border-main rounded-lg p-2 w-full">
+                        </div>
+                        <div class="pb-3">
+                            <label for="email" class="text-stroke text-l font-medium">Correo</label>
+                            <input type="email" name="email" id="email" placeholder="Correo electronico" class="border border-main rounded-lg p-2 w-full">
+                        </div>
+                    </div>
+                    <div class="w-full pb-3">
+                        <label for="mensaje" class="text-stroke text-l font-medium pb-2">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" class="border border-main rounded-lg p-2 w-full"></textarea>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer class="bg-stroke h-30">
+            <div class="h-full w-full py-5">
+                <div class="text-main">
+                    <a href="https://github.com/mundevux" id="profile-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cacuitiva/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/MundevUx"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mundev.ux/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div>
+                    <p>&copy; 2020 MundevUX 🤍</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
+
+<!-- Path: index.html 
+desarrollador web y diseñador gráfico. 
+-->
